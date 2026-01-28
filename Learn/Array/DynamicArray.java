@@ -1,22 +1,14 @@
-/**
- * @author X.e.n.g
- * @version 1.O
- * @project name: DSA-Java
- * @date: 11/25/2025
- * @time: 04:26 PM
- * @package: Learn.Array
- */
-
 package Learn.Array;
+
+import java.util.Iterator;
+
 @SuppressWarnings("unchecked")
 public class DynamicArray {
-    public static void main(String[] args) {
-
-    }
-    public class Array<T> implements Iterable<T> {
+    class Array<T> implements Iterable<T> {
         private T[] arr;
         private int len = 0;
         private int capacity = 0;
+
         private Array() { this(16); }
 
         public Array(int capacity) {
@@ -26,7 +18,7 @@ public class DynamicArray {
         }
 
         public int size() { return len; }
-        public boolean isEmpty() {return size() == 0; }
+        public boolean isEmpty() { return size() == 0; }
 
         public T get(int index) {
             return arr[index];
@@ -43,7 +35,22 @@ public class DynamicArray {
             len = 0;
         }
 
-        
-    }
+        // Thêm phương thức iterator()
+        @Override
+        public Iterator<T> iterator() {
+            return new Iterator<T>() {
+                int index = 0;
 
+                @Override
+                public boolean hasNext() {
+                    return index < len;
+                }
+
+                @Override
+                public T next() {
+                    return arr[index++];
+                }
+            };
+        }
+    }
 }

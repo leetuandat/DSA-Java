@@ -1,6 +1,6 @@
 package DsaMat3514.midterm1.exercise2;
 
-public class MyLinkedStack<T> {
+public class MyLinkedStack1<T> {
     private static class Node<E> {
         E data;
         Node<E> next;

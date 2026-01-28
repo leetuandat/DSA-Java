@@ -14,8 +14,8 @@ public class BooleanExpressionCalculator {
     public boolean computeBooleanExpression(String expression){
         String[] tokens = expression.trim().split("\\s+");
         // TODO
-        MyLinkedStack<String> operators = new MyLinkedStack<>();
-        MyLinkedStack<Boolean> values = new MyLinkedStack<>();
+        MyLinkedStack1<String> operators = new MyLinkedStack1<>();
+        MyLinkedStack1<Boolean> values = new MyLinkedStack1<>();
 
         for (String token : tokens) {
             switch (token) {

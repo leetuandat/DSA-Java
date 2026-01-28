@@ -2,7 +2,7 @@ package DsaMat3514.midterm1.exercise2;
 
 public class Test {
     public static void main(String[] args) {
-        MyLinkedStack<String> myLinkedStack = new MyLinkedStack<>();
+        MyLinkedStack1<String> myLinkedStack = new MyLinkedStack1<>();
 
         System.out.println("Thêm một số phần tử vào ngăn xếp...");
         myLinkedStack.push("Môn");

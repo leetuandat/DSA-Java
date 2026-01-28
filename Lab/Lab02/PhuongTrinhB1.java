@@ -10,5 +10,5 @@
 
 package Lab.Lab02;
 
-public class bth3 {
-}
+//public class bth3 {
+//}
