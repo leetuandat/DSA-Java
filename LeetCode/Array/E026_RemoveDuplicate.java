@@ -1,5 +1,4 @@
 /**
- * This class is used to solve Remove Duplicate problem in leetcode.
  * The link of this problem is <a href = "https://leetcode.com/problems/remove-duplicates-from-sorted-array/"> here </a>.
  * @author X.e.n.g
  * @version 1.O
@@ -67,27 +66,5 @@ public class E026_RemoveDuplicate {
             }
         }
         return l;
-    }
-
-
-    public static void main(String[] args) {
-        TreeSet<Integer> unique = new TreeSet<>();
-        int[] nums = {1, 1, 2, 2, 3};
-//        for (int num : nums) {
-//            unique.add(num);
-//        }
-//        int i = 0;
-//        for (int num : unique) {
-//            nums[i++] = num;
-//        }
-        int l = 1;
-        for (int r = 1; r < nums.length; r++) {
-            if (nums[r] != nums[r-1]) {
-                nums[l++] = nums[r];
-            }
-        }
-        for (int num : nums) {
-            System.out.print(num+ " ");
-        }
     }
 }

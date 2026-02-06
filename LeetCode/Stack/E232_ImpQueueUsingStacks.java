@@ -1,5 +1,4 @@
 /**
- * This class is used to solve Valid Parentheses problem in leetcode.
  * The link of this problem is <a href = "https://leetcode.com/problems/implement-queue-using-stacks/"> here </a>
  * @author X.e.n.g
  * @version 1.O

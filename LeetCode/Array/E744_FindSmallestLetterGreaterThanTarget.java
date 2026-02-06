@@ -1,5 +1,4 @@
 /**
- * This class is used to solve Remove Duplicate problem in leetcode.
  * The link of this problem is <a href = "https://leetcode.com/problems/find-smallest-letter-greater-than-target/"> here </a>.
  * @author X.e.n.g
  * @version 1.O
