@@ -7,7 +7,7 @@
  * @package: DsaMat3514.CayAVL
  */
 
-package DsaMat3514.CayAVL;
+package DsaMat3514.BinarySearchTree.CayAVL;
 
 public class test {
     public void inorder(Node node) {

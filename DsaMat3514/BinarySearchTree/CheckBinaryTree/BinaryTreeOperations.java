@@ -7,7 +7,7 @@
  * @package: DsaMat3514.CheckBinaryTree
  */
 
-package DsaMat3514.CheckBinaryTree;
+package DsaMat3514.BinarySearchTree.CheckBinaryTree;
 
 public class BinaryTreeOperations {
     private static Integer prevValue = null;
