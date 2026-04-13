@@ -31,11 +31,26 @@ public class E3740_MinimumDistanceBetweenThreeEqualElementsI {
         return (minDis == Integer.MAX_VALUE) ? -1 : 2*minDis;
     }
 
-//    public int minimumDistance2(int[] nums) {
-//        Map<Integer, int[]> map = new HashMap<>();
-//        for (int i = 0; i < nums.length; i++) {
-//            int num = nums[i];
-//            map.put(num, int[] )
-//        }
-//    }
+    public int minimumDistance2(int[] nums) {
+        Map<Integer, int[]> map = new HashMap<>();
+        int minDist = Integer.MAX_VALUE;
+        for (int k = 0; k < nums.length; k++) {
+            int val = nums[k];
+            if (!map.containsKey(val)) {
+                map.put(val, new int[] {-1, -1});
+            }
+            int[] indices = map.get(val);
+            int i = indices[0];
+            int j = indices[1];
+            if (i != -1 && j != -1) {
+                int dist = 2 * (k - i);
+                if (dist < minDist) {
+                    minDist = dist;
+                }
+            }
+            indices[0] = j;
+            indices[1] = k;
+        }
+        return (minDist == Integer.MAX_VALUE) ? -1 : minDist;
+    }
 }
