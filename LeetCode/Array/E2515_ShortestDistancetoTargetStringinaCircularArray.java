@@ -19,12 +19,12 @@ public class E2515_ShortestDistancetoTargetStringinaCircularArray {
         for (int i = 0; i < len; i++) {
             if (words[i].equals(target)) {
                 int dist = Math.abs(i - startIndex);
-                shortestDis = Math.min(dist, shortestDis);
+                shortestDis = Math.min(shortestDis, Math.min(dist, len-dist));
             }
         }
 
         if (shortestDis == len) return -1;
 
-        return Math.min(shortestDis, len - shortestDis);
+        return shortestDis;
     }
 }
