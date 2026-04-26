@@ -1,5 +1,5 @@
 /**
- * The link of this problem is <a href = "https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/description/"> here </a>.
+ * The link of this problem is <a href = "https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/"> here </a>.
  *
  * @author X.e.n.g
  * @version 1.0
