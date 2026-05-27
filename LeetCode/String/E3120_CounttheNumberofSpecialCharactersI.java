@@ -36,6 +36,8 @@ public class E3120_CounttheNumberofSpecialCharactersI {
 
     /**
      * HashSet
+     * Space Complexity: O(1)
+     * Time Complexity: O(n)
      */
     public int numberOfSpecialChars2(String word) {
         Set<Character> lower = new HashSet<>();
